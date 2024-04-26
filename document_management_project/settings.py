@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'document_management'
+    'document_management',
+    'accounts'
 ]
 
 MIDDLEWARE = [
@@ -137,6 +138,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Static files settings (optional)
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+LOGIN_REDIRECT_URL = '/upload/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
